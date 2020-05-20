@@ -1,5 +1,5 @@
 <?php
-header('Access-Control-Allow-Origin', '*');
+header("Access-Control-Allow-Origin:*");
 $url=urldecode($_GET['url']);
 $ch = curl_init();
 curl_setopt($ch, CURLOPT_URL, urldecode($url));
