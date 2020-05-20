@@ -1,5 +1,5 @@
 <?php
-$url=$_GET['url'];
+$url=urldecode($_GET['url']);
 $ch = curl_init();
 curl_setopt($ch, CURLOPT_URL, urldecode($url));
 curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1);
