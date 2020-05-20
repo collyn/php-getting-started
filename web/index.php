@@ -7,8 +7,6 @@ curl_setopt($ch, CURLOPT_CUSTOMREQUEST, 'GET');
 curl_setopt($ch, CURLOPT_ENCODING, 'gzip, deflate');
 $headers = array();
 $headers[] = 'User-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/75.0.3770.80 Safari/537.36 OPR/62.0.3331.18';
-$headers[] = 'Referer: http://www.phimmoi.net/phim/sieu-anh-hung-shazam-i2-8085/xem-phim.html';
-$headers[] = 'Origin: http://www.phimmoi.net';
 curl_setopt($ch, CURLOPT_HTTPHEADER, $headers);
 $result = curl_exec($ch);
 if (curl_errno($ch)) {
