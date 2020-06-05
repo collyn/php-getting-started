@@ -8,6 +8,7 @@ curl_setopt($ch, CURLOPT_CUSTOMREQUEST, 'GET');
 curl_setopt($ch, CURLOPT_ENCODING, 'gzip, deflate');
 $headers = array();
 $headers[] = 'User-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/75.0.3770.80 Safari/537.36 OPR/62.0.3331.18';
+$headers[] = 'Referer: https://fimfast.com/tik-tok-kinh-thien-dai-nghich-chuyen';
 curl_setopt($ch, CURLOPT_HTTPHEADER, $headers);
 $result = curl_exec($ch);
 if (curl_errno($ch)) {
