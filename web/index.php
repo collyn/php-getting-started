@@ -1,6 +1,10 @@
 <?php
 header("Access-Control-Allow-Origin: http://goophim.com");
 $url=urldecode($_GET['url']);
+if(preg_match('/hdviet.com/', $url))
+    $referer='http://hdviet.com';
+else
+    $referer=$url;
 $ch = curl_init();
 curl_setopt($ch, CURLOPT_URL, urldecode($url));
 curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1);
