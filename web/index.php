@@ -2,7 +2,7 @@
 header("Access-Control-Allow-Origin: http://goophim.com");
 $url=urldecode($_GET['url']);
 if(preg_match('/hdviet.com/', $url))
-    $referer='http://hdviet.com';
+    $referer='http://m.hdviet.com/phim-bo/tam-sinh-tam-the-thap-ly-dao-hoa-ten-sreat-iii-of-peach-blossom-tap-42.html';
 else
     $referer=$url;
 $ch = curl_init();
